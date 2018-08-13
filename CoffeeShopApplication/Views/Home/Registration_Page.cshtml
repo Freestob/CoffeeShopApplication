@@ -1,11 +1,17 @@
 ﻿@{
     ViewBag.Title = "Registration Page";
 }
-
+<h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
 
 <form action="/Home/StoreInfo" method="put">
-    Name: <input type="text" name="addName" />
+    Name:   <input type="text" name="addName" required/>
     <br />
-    <input type="submit" value="Search" />
+    Email: <input type="email" name="addEmail" required />
+    <br/>
+    Phone:<input type="tel" name="addPhone" />
+    <br/>
+    <input type="submit" value="Submit"/>
 </form>
+
+    S

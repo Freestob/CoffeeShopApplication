@@ -34,15 +34,10 @@ namespace CoffeeShopApplication.Controllers
             return View();
         }
 
-        public ActionResult UserRegister(string addName)
+        public ActionResult StoreInfo(string addName, string addEmail)
         {
-            string registeredName = addName;
-            return View();
-        }
+            ViewBag.Message = $"Hello {addName} we sent a verification email to {addEmail}. Please check your inbox";
 
-        public ActionResult StoreInfo(string addName)
-        {
-            ViewBag.Message = $"Hello {addName}";
             return View();
         }
     }
